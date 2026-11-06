@@ -1,0 +1,9 @@
+{
+  "programs": [
+    {"program_id": "PRG-0001", "client_id": "CLI-0001", "name": "EXAMPLE CD22 CAR-T", "modality": "car_t", "phase": "phase1"},
+    {"program_id": "PRG-0002", "client_id": "CLI-0001", "name": "EXAMPLE AAV9 gene therapy", "modality": "gene_therapy", "phase": "preclinical"}
+  ],
+  "batches": [
+    {"batch_id": "BAT-0101", "program_id": "PRG-0001", "lot_number": "EX-CD22-001", "status": "released", "manufactured_at": "2026-09-12"}
+  ]
+}

@@ -1,0 +1,20 @@
+# Agent-capability descriptor (portfolio-agent scaffold format).
+capability: asset-registry
+canonical_repo: timjm25/AssetProgramRegistry
+agent: shared-tool
+gxp: true                              # stage moves and batch links are part of the GxP record
+
+invocation:
+  mode: api_service
+  entrypoint: asset_registry.api:create_app
+  openapi: /schema.json
+
+entities:
+  reads: [Target, Asset, Indication, Study, Batch, Submission, Deal, Partner, IPReference]
+  writes: [Target, Asset, Indication, Study, Batch, Submission, Deal, Partner, IPReference]
+
+skill: null
+
+depends_on:
+  - gxp-audit-platform                 # AuditTrailService (optional; spools locally if down)
+  - cdmo-semantic-layer                # ontology classes returned by /harmonize

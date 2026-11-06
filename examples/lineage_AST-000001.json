@@ -1,0 +1,84 @@
+{
+  "asset_id": "AST-000001",
+  "schema_version": "1.0.0",
+  "asset": {
+    "aliases": [
+      "oral KLK5 inhibitor"
+    ],
+    "asset_id": "AST-000001",
+    "code_name": "EX-101",
+    "description": "EXAMPLE oral KLK5 inhibitor for Netherton syndrome",
+    "modality": "small_molecule",
+    "name": "EXAMPLE-KLK5i",
+    "owner": "EXAMPLE program lead",
+    "stage": "lead_optimization",
+    "status": "active",
+    "target_id": "TGT-000001",
+    "created_at": "2026-11-06T12:00:00Z",
+    "updated_at": "2026-11-06T12:00:00Z"
+  },
+  "target": {
+    "name": "Kallikrein-related peptidase 5",
+    "organism": "Homo sapiens",
+    "symbol": "KLK5",
+    "target_id": "TGT-000001",
+    "uniprot_id": "Q9Y337",
+    "validation_evidence": "EXAMPLE: loss of LEKTI drives unchecked KLK5 activity"
+  },
+  "indications": [
+    {
+      "asset_id": "AST-000001",
+      "doid": "DOID:0050474",
+      "indication_id": "IND-000001",
+      "is_lead": true,
+      "name": "Netherton syndrome",
+      "orphan": true,
+      "peak_sales_millions": 450
+    }
+  ],
+  "studies": [
+    {
+      "asset_id": "AST-000001",
+      "end_date": "2026-09-15",
+      "indication_id": "IND-000001",
+      "kind": "in_vitro",
+      "partner_id": "PTN-000001",
+      "start_date": "2026-07-01",
+      "status": "complete",
+      "study_id": "STY-000001",
+      "title": "EXAMPLE KLK5 potency and selectivity panel"
+    },
+    {
+      "asset_id": "AST-000001",
+      "kind": "in_vivo",
+      "partner_id": "PTN-000001",
+      "phase": "preclinical",
+      "start_date": "2026-10-01",
+      "status": "ongoing",
+      "study_id": "STY-000002",
+      "title": "EXAMPLE mouse PK"
+    }
+  ],
+  "batches": [],
+  "submissions": [],
+  "deals": [],
+  "partners": [
+    {
+      "country": "US",
+      "kind": "cro",
+      "name": "EXAMPLE Discovery CRO",
+      "partner_id": "PTN-000001"
+    }
+  ],
+  "ip_refs": [
+    {
+      "asset_id": "AST-000001",
+      "ip_id": "IPR-000001",
+      "kind": "provisional",
+      "priority_date": "2026-10-20",
+      "status": "filed",
+      "title": "EXAMPLE KLK5 inhibitor series"
+    }
+  ],
+  "external_ids": []
+}

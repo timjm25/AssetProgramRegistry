@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asset-program-registry"
+version = "0.1.0"
+description = "One permanent Asset ID from target to deal: the registry that links a virtual pharma's tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "Tim Maguire" }]
+dependencies = ["Flask>=3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+asset-registry = "asset_registry.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["asset_registry*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
